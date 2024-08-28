@@ -1,0 +1,651 @@
+﻿### PERSONALITY TRAITS ###
+
+Remove_Direct = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = direct
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = direct
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Persistent = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = persistent
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = persistent
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Cautious = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = cautious
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = cautious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Arrogant = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = arrogant
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = arrogant
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Bigoted = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = bigoted
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = bigoted
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Reckless = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = reckless
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = reckless
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Tactful = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = tactful
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = tactful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Ambitious = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = ambitious
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = ambitious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Imperious = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = imperious
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = imperious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Wrathful = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = wrathful
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = wrathful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Reserved = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = reserved
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = reserved
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Cruel = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = cruel
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = cruel
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Meticulous = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = meticulous
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = meticulous
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Charismatic = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = charismatic
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = charismatic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Romantic = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = romantic
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = romantic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Brave = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = brave
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = brave
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Innovative = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = innovative
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = innovative
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Hedonist = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = hedonist
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = hedonist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Pious = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = pious
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = pious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Imposing = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = imposing
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = imposing
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Honorable = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = honorable
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = honorable
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+###
+### GENERAL TRAITS ###
+###
+
+Remove_SupplyRequisitionsExpert = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = resupply_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = resupply_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Pillager = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = pillager
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = pillager
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Surveyor = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = surveyor
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = surveyor
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_WoodlandCombatExpert = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = forest_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = forest_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_OpenTerrainCommander = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = plains_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = plains_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_MountainCombatExpert = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = mountain_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = mountain_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = basic_artillery_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = experienced_artillery_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = expert_artillery_commander
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_StalwartDefender = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = stalwart_defender
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = stalwart_defender
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_TrenchRat = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = trench_rat
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = trench_rat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_DefenseinDepthSpecialist = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = defense_in_depth_specialist
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = defense_in_depth_specialist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+
+Remove_OffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = basic_offensive_planner
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedOffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = experienced_offensive_planner
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertOffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		has_trait = expert_offensive_planner
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
