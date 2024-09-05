@@ -1,0 +1,427 @@
+###
+### GENERAL TRAITS ###
+###
+
+Open_CI_General = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_General_var }
+		has_role = general
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_General_var }
+			}
+			set_variable = openCI_General_var
+		}
+		else = {
+			remove_variable = openCI_General_var
+		}
+	}
+
+}
+
+Close_CI_General = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_General_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_General_var
+	}
+}
+
+Add_SupplyRequisitionsExpert = {
+	icon = "gfx/interface/icons/character_trait_icons/resupply_commander.dds"
+	potential = {
+		NOT = { has_trait = resupply_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = resupply_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Pillager = {
+	icon = "gfx/interface/icons/character_trait_icons/pillager.dds"
+	potential = {
+		NOT = { has_trait = pillager }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = pillager
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Surveyor = {
+	icon = "gfx/interface/icons/character_trait_icons/surveyor.dds"
+	potential = {
+		NOT = { has_trait = surveyor }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = surveyor
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_WoodlandCombatExpert = {
+	icon = "gfx/interface/icons/character_trait_icons/forest_commander.dds"
+	potential = {
+		NOT = { has_trait = forest_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = forest_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_OpenTerrainCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/plains_commander.dds"
+	potential = {
+		NOT = { has_trait = plains_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = plains_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_MountainCombatExpert = {
+	icon = "gfx/interface/icons/character_trait_icons/mountain_commander.dds"
+	potential = {
+		NOT = { has_trait = mountain_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = mountain_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ArtilleryCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_artillery_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_artillery_commander }
+		NOT = { has_trait = experienced_artillery_commander }
+		NOT = { has_trait = expert_artillery_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedArtilleryCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_artillery_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_artillery_commander }
+		NOT = { has_trait = experienced_artillery_commander }
+		NOT = { has_trait = expert_artillery_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertArtilleryCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_artillery_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_artillery_commander }
+		NOT = { has_trait = experienced_artillery_commander }
+		NOT = { has_trait = expert_artillery_commander }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_StalwartDefender = {
+	icon = "gfx/interface/icons/character_trait_icons/stalwart_defender.dds"
+	potential = {
+		NOT = { has_trait = stalwart_defender }
+		NOT = { has_trait = trench_rat }
+		NOT = { has_trait = defense_in_depth_specialist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = stalwart_defender
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_TrenchRat = {
+	icon = "gfx/interface/icons/character_trait_icons/trench_rat.dds"
+	potential = {
+		NOT = { has_trait = stalwart_defender }
+		NOT = { has_trait = trench_rat }
+		NOT = { has_trait = defense_in_depth_specialist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = trench_rat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_DefenseinDepthSpecialist = {
+	icon = "gfx/interface/icons/character_trait_icons/defense_in_depth_specialist.dds"
+	potential = {
+		NOT = { has_trait = stalwart_defender }
+		NOT = { has_trait = trench_rat }
+		NOT = { has_trait = defense_in_depth_specialist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = defense_in_depth_specialist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_OffensivePlanner = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_offensive_planner.dds"
+	potential = {
+		NOT = { has_trait = basic_offensive_planner }
+		NOT = { has_trait = experienced_offensive_planner }
+		NOT = { has_trait = expert_offensive_planner }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedOffensivePlanner = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_offensive_planner.dds"
+	potential = {
+		NOT = { has_trait = basic_offensive_planner }
+		NOT = { has_trait = experienced_offensive_planner }
+		NOT = { has_trait = expert_offensive_planner }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertOffensivePlanner = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_offensive_planner.dds"
+	potential = {
+		NOT = { has_trait = basic_offensive_planner }
+		NOT = { has_trait = experienced_offensive_planner }
+		NOT = { has_trait = expert_offensive_planner }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_DefensiveStrategist = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_defensive_strategist.dds"
+	potential = {
+		NOT = { has_trait = basic_defensive_strategist }
+		NOT = { has_trait = experienced_defensive_strategist }
+		NOT = { has_trait = expert_defensive_strategist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedDefensiveStrategist = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_defensive_strategist.dds"
+	potential = {
+		NOT = { has_trait = basic_defensive_strategist }
+		NOT = { has_trait = experienced_defensive_strategist }
+		NOT = { has_trait = expert_defensive_strategist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertDefensiveStrategist = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_defensive_strategist.dds"
+	potential = {
+		NOT = { has_trait = basic_defensive_strategist }
+		NOT = { has_trait = experienced_defensive_strategist }
+		NOT = { has_trait = expert_defensive_strategist }
+		has_role = general
+		has_variable = openCI_General_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

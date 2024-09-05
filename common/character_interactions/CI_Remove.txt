@@ -1,0 +1,1324 @@
+﻿### PERSONALITY TRAITS ###
+
+Open_CI_Remove = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_Remove_var }
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_Remove_var }
+			}
+			set_variable = openCI_Remove_var
+		}
+		else = {
+			remove_variable = openCI_Remove_var
+		}
+	}
+
+}
+
+Close_CI_Remove = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_Remove_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_Remove_var
+	}
+}
+
+Remove_Direct = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = direct
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = direct
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Persistent = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = persistent
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = persistent
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Cautious = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = cautious
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = cautious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Arrogant = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = arrogant
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = arrogant
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Bigoted = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = bigoted
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = bigoted
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Reckless = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = reckless
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = reckless
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Tactful = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = tactful
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = tactful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Ambitious = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = ambitious
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = ambitious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Imperious = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = imperious
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = imperious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Wrathful = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = wrathful
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = wrathful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Reserved = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = reserved
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = reserved
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Cruel = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = cruel
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = cruel
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Meticulous = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = meticulous
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = meticulous
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Charismatic = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = charismatic
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = charismatic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Romantic = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = romantic
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = romantic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Brave = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = brave
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = brave
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Innovative = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = innovative
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = innovative
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Hedonist = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = hedonist
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = hedonist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+Remove_Pious = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = pious
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = pious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Imposing = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = imposing
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = imposing
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Honorable = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = honorable
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = honorable
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+###
+### GENERAL TRAITS ###
+###
+
+Remove_SupplyRequisitionsExpert = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = resupply_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = resupply_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Pillager = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = pillager
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = pillager
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Surveyor = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = surveyor
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = surveyor
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_WoodlandCombatExpert = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = forest_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = forest_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_OpenTerrainCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = plains_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = plains_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_MountainCombatExpert = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = mountain_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = mountain_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_artillery_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_artillery_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertArtilleryCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_artillery_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_artillery_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_StalwartDefender = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = stalwart_defender
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = stalwart_defender
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_TrenchRat = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = trench_rat
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = trench_rat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_DefenseinDepthSpecialist = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = defense_in_depth_specialist
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = defense_in_depth_specialist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+
+Remove_OffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_offensive_planner
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedOffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_offensive_planner
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertOffensivePlanner = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_offensive_planner
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_offensive_planner
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_DefensiveStrategist = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_defensive_strategist
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedDefensiveStrategist = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_defensive_strategist
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertDefensiveStrategist = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_defensive_strategist
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_defensive_strategist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+###
+### Naval Admiral Traits
+###
+
+Remove_NavalCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_naval_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedNavalCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_naval_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertNavalCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_naval_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ConvoyRaiderCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = convoy_raider_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = convoy_raider_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedConvoyRaiderCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_convoy_raider
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_convoy_raider
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertConvoyRaiderCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_convoy_raider
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_convoy_raider
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_DockyardOrganizer = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = dockyard_master
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = dockyard_master
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+###
+### Other MultiRole Traits
+###
+
+Remove_TraditionalistCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = traditionalist_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = traditionalist_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_PopularCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = popular_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = popular_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_CelebrityCommander = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = celebrity_commander
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = celebrity_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_BasicDiplomat = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_diplomat
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedDiplomat = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_diplomat
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_MasterfulDiplomat = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = masterful_diplomat
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = masterful_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ColonialAdministrator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_colonial_administrator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedColonialAdministrator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_colonial_administrator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertColonialAdministrator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_colonial_administrator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_PoliticalOperator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = basic_political_operator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = basic_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExperiencedPoliticalOperator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = experienced_political_operator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = experienced_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_ExpertPoliticalOperator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = expert_political_operator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = expert_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_InspirationalOrator = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = inspirational_orator
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = inspirational_orator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Demagogue = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = demagogue
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = demagogue
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Firebrand = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = firebrand
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = firebrand
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Explorer = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = explorer
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = explorer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Bandit = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = bandit
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = bandit
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+
+Remove_Erudite = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = erudite
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = erudite
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Literary = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = literary
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = literary
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_Engineer = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = engineer
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = engineer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Remove_MasterBureaucrat = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_trait = master_bureaucrat
+		has_variable = openCI_Remove_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		remove_trait = master_bureaucrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

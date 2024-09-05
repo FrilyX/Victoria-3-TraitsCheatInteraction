@@ -1,0 +1,665 @@
+Open_CI_Ideology = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_ideology_var }
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_ideology_var }
+			}
+			set_variable = openCI_ideology_var
+		}
+		else = {
+			remove_variable = openCI_ideology_var
+		}
+	}
+
+}
+
+Close_CI_Ideology = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_ideology_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_ideology_var
+	}
+}
+
+Set_Ideology_Moderate = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_no_ideology.dds"	
+	potential = {
+		NOT = { has_trait = ideology_moderate }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_moderate
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Traditionalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_traditionalist.dds"
+	potential = {
+		NOT = { has_trait = ideology_traditionalist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_traditionalist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Atheist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_atheist.dds"
+	potential = {
+		NOT = { has_trait = ideology_atheist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_atheist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Republican = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_republican.dds"
+	potential = {
+		NOT = { has_trait = ideology_republican_leader }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_republican_leader
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Radical = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_radical.dds"
+	potential = {
+		NOT = { has_trait = ideology_radical }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_radical
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Reformer = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_reformer.dds"
+	potential = {
+		NOT = { has_trait = ideology_reformer }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_reformer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Feminist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_womens_liberation.dds"
+	potential = {
+		NOT = { has_trait = ideology_feminist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_feminist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Abolitionist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_abolitionist.dds"
+	potential = {
+		NOT = { has_trait = ideology_abolitionist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_abolitionist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Slaver = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_slaver.dds"
+	potential = {
+		NOT = { has_trait = ideology_slaver }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_slaver
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Pacifist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_pacifist.dds"
+	potential = {
+		NOT = { has_trait = ideology_pacifist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_pacifist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Jingoist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_jingoist.dds"
+	potential = {
+		NOT = { has_trait = ideology_jingoist_leader }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_jingoist_leader
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Royalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_royalist.dds"
+	potential = {
+		NOT = { has_trait = ideology_royalist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_royalist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_SocialDemocrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
+	potential = {
+		NOT = { has_trait = ideology_social_democrat}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_social_democrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Communist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_communist.dds"
+	potential = {
+		NOT = { has_trait = ideology_communist}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_communist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Vanguardist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_vanguardist.dds"
+	potential = {
+		NOT = { has_trait = ideology_vanguardist}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_vanguardist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Fascist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_fascist.dds"
+	potential = {
+		NOT = { has_trait = ideology_fascist}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_fascist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Anarchist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_anarchist.dds"
+	potential = {
+		NOT = { has_trait = ideology_anarchist}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_anarchist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_EthnoNationalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_ethno_nationalist.dds" 
+	potential = {
+		NOT = { has_trait = ideology_ethno_nationalist}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_ethno_nationalist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Theocrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_theocrat.dds"
+	potential = {
+		NOT = { has_trait = ideology_theocrat}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_theocrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Theocrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_theocrat.dds"
+	potential = {
+		NOT = { has_trait = ideology_theocrat}
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_theocrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_MarketLiberal = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_market_liberal.dds"
+	potential = {
+		NOT = { has_trait = ideology_market_liberal }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_market_liberal
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Luddite = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/luddite.dds"
+	potential = {
+		NOT = { has_trait = ideology_luddite }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_luddite
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Authoritorian = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/authoritarian.dds"
+	potential = {
+		NOT = { has_trait = ideology_authoritarian }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_authoritarian
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Protectionist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/exp_ideology_leader_protectionism.dds"
+	potential = {
+		NOT = { has_trait = ideology_protectionist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_protectionist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Humanitarian = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_humanitarism.dds"
+	potential = {
+		NOT = { has_trait = ideology_humanitarian }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_humanitarian
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_JacksonianDemocrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/jackson_democrat.dds"
+	potential = {
+		NOT = { has_trait = ideology_jacksonian_democrat }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_jacksonian_democrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Positivist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_positivist.dds"
+	potential = {
+		NOT = { has_trait = ideology_positivist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_positivist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_LandReformer = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_land_reformer.dds"
+	potential = {
+		NOT = { has_trait = ideology_land_reformer }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_land_reformer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_Integralist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_integralist.dds"
+	potential = {
+		NOT = { has_trait = ideology_integralist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_integralist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_LiberalLeader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_liberal.dds"
+	potential = {
+		NOT = { has_trait = ideology_liberal_leader }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_liberal_leader
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_CorporatistLeader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_corporatist.dds"
+	potential = {
+		NOT = { has_trait = ideology_corporatist_leader }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_corporatist_leader
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_HumanitarianRoyalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_humanitarian_royalist.dds"
+	potential = {
+		NOT = { has_trait = ideology_humanitarian_royalist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_humanitarian_royalist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Set_Ideology_HumanitarianRoyalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_humanitarian_royalist.dds"
+	potential = {
+		NOT = { has_trait = ideology_humanitarian_royalist }
+		has_variable = openCI_ideology_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		set_ideology = ideology:ideology_humanitarian_royalist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

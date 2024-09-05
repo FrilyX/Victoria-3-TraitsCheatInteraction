@@ -1,0 +1,15 @@
+﻿l_english:
+  Open_CI = "Open CI - Personality Traits"
+  Close_CI = "Close CI - Personality Traits"
+
+  Open_CI_General = "Open CI - General Traits"
+  Close_CI_General = "Close CI - General Traits"
+
+  Open_CI_Admiral = "Open CI - Admiral Traits"
+  Close_CI_Admiral = "Close CI - Admiral Traits"
+
+  Open_CI_Others = "Open CI - Others Traits"
+  Close_CI_Others = "Close CI - Others Traits"
+
+  Open_CI_Remove = "Open CI - Remove Traits"
+  Close_CI_Remove = "Close CI - Remove Traits"

@@ -1,0 +1,195 @@
+###
+### Naval Admiral Traits
+###
+
+Open_CI_Admiral = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_Admiral_var }
+		has_role = admiral
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_Admiral_var }
+			}
+			set_variable = openCI_Admiral_var
+		}
+		else = {
+			remove_variable = openCI_Admiral_var
+		}
+	}
+
+}
+
+Close_CI_Admiral = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_Admiral_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_Admiral_var
+	}
+}
+
+Add_NavalCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_naval_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_naval_commander }
+		NOT = { has_trait = experienced_naval_commander }
+		NOT = { has_trait = expert_naval_commander }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedNavalCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_naval_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_naval_commander }
+		NOT = { has_trait = experienced_naval_commander }
+		NOT = { has_trait = expert_naval_commander }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertNavalCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_naval_commander.dds"
+	potential = {
+		NOT = { has_trait = basic_naval_commander }
+		NOT = { has_trait = experienced_naval_commander }
+		NOT = { has_trait = expert_naval_commander }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_naval_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ConvoyRaiderCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/convoy_raider_commander.dds"
+	potential = {
+		NOT = { has_trait = convoy_raider_commander }
+		NOT = { has_trait = experienced_convoy_raider }
+		NOT = { has_trait = expert_convoy_raider }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = convoy_raider_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedConvoyRaiderCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_convoy_raider.dds"
+	potential = {
+		NOT = { has_trait = convoy_raider_commander }
+		NOT = { has_trait = experienced_convoy_raider }
+		NOT = { has_trait = expert_convoy_raider }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_convoy_raider
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertConvoyRaiderCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_convoy_raider.dds"
+	potential = {
+		NOT = { has_trait = convoy_raider_commander }
+		NOT = { has_trait = experienced_convoy_raider }
+		NOT = { has_trait = expert_convoy_raider }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_convoy_raider
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_DockyardOrganizer = {
+	icon = "gfx/interface/icons/character_trait_icons/dockyard_master.dds"
+	potential = {
+		NOT = { has_trait = dockyard_master }
+		has_role = admiral
+		has_variable = openCI_Admiral_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = dockyard_master
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

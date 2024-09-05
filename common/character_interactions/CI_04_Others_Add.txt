@@ -1,0 +1,471 @@
+###
+### Other MultiRole Traits
+###
+
+Open_CI_Others = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_Others_var }
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_Others_var }
+			}
+			set_variable = openCI_Others_var
+		}
+		else = {
+			remove_variable = openCI_Others_var
+		}
+	}
+
+}
+
+Close_CI_Others = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_Others_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_Others_var
+	}
+}
+
+Add_TraditionalistCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/traditionalist_commander.dds"
+	potential = {
+		NOT = { has_trait = traditionalist_commander }
+		NOT = { has_trait = popular_commander }
+		NOT = { has_trait = celebrity_commander }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = traditionalist_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_PopularCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/popular_commander.dds"
+	potential = {
+		NOT = { has_trait = traditionalist_commander }
+		NOT = { has_trait = popular_commander }
+		NOT = { has_trait = celebrity_commander }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = popular_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_CelebrityCommander = {
+	icon = "gfx/interface/icons/character_trait_icons/celebrity_commander.dds"
+	potential = {
+		NOT = { has_trait = traditionalist_commander }
+		NOT = { has_trait = popular_commander }
+		NOT = { has_trait = celebrity_commander }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = celebrity_commander
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_BasicDiplomat = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_diplomat.dds"
+	potential = {
+		NOT = { has_trait = basic_diplomat }
+		NOT = { has_trait = experienced_diplomat }
+		NOT = { has_trait = masterful_diplomat }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedDiplomat = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_diplomat.dds"
+	potential = {
+		NOT = { has_trait = basic_diplomat }
+		NOT = { has_trait = experienced_diplomat }
+		NOT = { has_trait = masterful_diplomat }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_MasterfulDiplomat = {
+	icon = "gfx/interface/icons/character_trait_icons/masterful_diplomat.dds"
+	potential = {
+		NOT = { has_trait = basic_diplomat }
+		NOT = { has_trait = experienced_diplomat }
+		NOT = { has_trait = masterful_diplomat }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = masterful_diplomat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ColonialAdministrator = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_colonial_administrator.dds"
+	potential = {
+		NOT = { has_trait = basic_colonial_administrator }
+		NOT = { has_trait = experienced_colonial_administrator }
+		NOT = { has_trait = expert_colonial_administrator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedColonialAdministrator = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_colonial_administrator.dds"
+	potential = {
+		NOT = { has_trait = basic_colonial_administrator }
+		NOT = { has_trait = experienced_colonial_administrator }
+		NOT = { has_trait = expert_colonial_administrator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertColonialAdministrator = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_colonial_administrator.dds"
+	potential = {
+		NOT = { has_trait = basic_colonial_administrator }
+		NOT = { has_trait = experienced_colonial_administrator }
+		NOT = { has_trait = expert_colonial_administrator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_colonial_administrator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_PoliticalOperator = {
+	icon = "gfx/interface/icons/character_trait_icons/basic_political_operator.dds"
+	potential = {
+		NOT = { has_trait = basic_political_operator }
+		NOT = { has_trait = experienced_political_operator }
+		NOT = { has_trait = expert_political_operator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = basic_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExperiencedPoliticalOperator = {
+	icon = "gfx/interface/icons/character_trait_icons/experienced_political_operator.dds"
+	potential = {
+		NOT = { has_trait = basic_political_operator }
+		NOT = { has_trait = experienced_political_operator }
+		NOT = { has_trait = expert_political_operator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = experienced_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_ExpertPoliticalOperator = {
+	icon = "gfx/interface/icons/character_trait_icons/expert_political_operator.dds"
+	potential = {
+		NOT = { has_trait = basic_political_operator }
+		NOT = { has_trait = experienced_political_operator }
+		NOT = { has_trait = expert_political_operator }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = expert_political_operator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_InspirationalOrator = {
+	icon = "gfx/interface/icons/character_trait_icons/inspirational_orator1.dds"
+	potential = {
+		NOT = { has_trait = inspirational_orator }
+		NOT = { has_trait = demagogue }
+		NOT = { has_trait = firebrand }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = inspirational_orator
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Demagogue = {
+	icon = "gfx/interface/icons/character_trait_icons/demagogue_orator2.dds"
+	potential = {
+		NOT = { has_trait = inspirational_orator }
+		NOT = { has_trait = demagogue }
+		NOT = { has_trait = firebrand }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = demagogue
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Firebrand = {
+	icon = "gfx/interface/icons/character_trait_icons/firebrand_orator3.dds"
+	potential = {
+		NOT = { has_trait = inspirational_orator }
+		NOT = { has_trait = demagogue }
+		NOT = { has_trait = firebrand }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = firebrand
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Explorer = {
+	icon = "gfx/interface/icons/character_trait_icons/explorer.dds"
+	potential = {
+		NOT = { has_trait = explorer }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = explorer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Bandit = {
+	icon = "gfx/interface/icons/character_trait_icons/bandit.dds"
+	potential = {
+		NOT = { has_trait = bandit }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = bandit
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Erudite = {
+	icon = "gfx/interface/icons/character_trait_icons/erudite.dds"
+	potential = {
+		NOT = { has_trait = erudite }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = erudite
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Literary = {
+	icon = "gfx/interface/icons/character_trait_icons/literary.dds"
+	potential = {
+		NOT = { has_trait = literary }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = literary
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Engineer = {
+	icon = "gfx/interface/icons/character_trait_icons/engineer.dds"
+	potential = {
+		NOT = { has_trait = engineer }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = engineer
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_MasterBureaucrat = {
+	icon = "gfx/interface/icons/character_trait_icons/master_bureaucrat.dds"
+	potential = {
+		NOT = { has_trait = master_bureaucrat }
+		has_variable = openCI_Others_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = master_bureaucrat
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

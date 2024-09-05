@@ -1,0 +1,453 @@
+﻿#icon					Path to icon for both right click menu and character panel buttons
+#clicksound				Clicksound for both right click menu and character panel buttons
+
+#						All scopes are character scopes with the interacting country stored as the actor
+#potential				Trigger to check if the interaction should be shown
+#possible 				Trigger to check if the interaction is available
+#effect					The effects of the interaction
+#cooldown				Scriptable duration that this interaction will be unavailable for the interacting country
+
+#show_requirements		Whether to always show requirements, similar to highlighted options in events
+#show_confirmation_box	Whether to require confirmation
+
+#ai_chance				Scriptable value for the chance (0-100) that the AI will use this interaction when available, default 0
+
+### PERSONALITY TRAITS ###
+
+Open_CI_Personality = {
+	icon = "gfx/interface/character_panel/grant_command.dds"
+	potential = {
+		NOT = { has_variable = openCI_var }
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = openCI_var }
+			}
+			set_variable = openCI_var
+		}
+		else = {
+			remove_variable = openCI_var
+		}
+	}
+
+}
+
+Close_CI_Personality = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	potential = {
+		has_variable = openCI_var
+	}
+
+	ai_chance = {
+		base = 0
+    }
+
+	effect = {
+		remove_variable = openCI_var
+	}
+}
+
+Add_Direct = {
+	icon = "gfx/interface/icons/character_trait_icons/direct.dds"
+	potential = {
+		NOT = { has_trait = direct }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = direct
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Persistent = {
+	icon = "gfx/interface/icons/character_trait_icons/persistent.dds"
+	potential = {
+		NOT = { has_trait = persistent }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = persistent
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Cautious = {
+	icon = "gfx/interface/icons/character_trait_icons/cautious.dds"
+	potential = {
+		NOT = { has_trait = cautious }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = cautious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Arrogant = {
+	icon = "gfx/interface/icons/character_trait_icons/arrogant.dds"
+	potential = {
+		NOT = { has_trait = arrogant }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = arrogant
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Bigoted = {
+	icon = "gfx/interface/icons/character_trait_icons/bigoted.dds"
+	potential = {
+		NOT = { has_trait = bigoted }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = bigoted
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Reckless = {
+	icon = "gfx/interface/icons/character_trait_icons/reckless.dds"
+	potential = {
+		NOT = { has_trait = reckless }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = reckless
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Tactful = {
+	icon = "gfx/interface/icons/character_trait_icons/tactful.dds"
+	potential = {
+		NOT = { has_trait = tactful }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = tactful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Ambitious = {
+	icon = "gfx/interface/icons/character_trait_icons/ambitious.dds"
+	potential = {
+		NOT = { has_trait = ambitious }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = ambitious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Imperious = {
+	icon = "gfx/interface/icons/character_trait_icons/imperious.dds"
+	potential = {
+		NOT = { has_trait = imperious }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = imperious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Wrathful = {
+	icon = "gfx/interface/icons/character_trait_icons/wrathful.dds"
+	potential = {
+		NOT = { has_trait = wrathful }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = wrathful
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Reserved = {
+	icon = "gfx/interface/icons/character_trait_icons/reserved.dds"
+	potential = {
+		NOT = { has_trait = reserved }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = reserved
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Cruel = {
+	icon = "gfx/interface/icons/character_trait_icons/cruel.dds"
+	potential = {
+		NOT = { has_trait = cruel }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = cruel
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Meticulous = {
+	icon = "gfx/interface/icons/character_trait_icons/meticulous.dds"
+	potential = {
+		NOT = { has_trait = meticulous }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = meticulous
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Charismatic = {
+	icon = "gfx/interface/icons/character_trait_icons/charismatic.dds"
+	potential = {
+		NOT = { has_trait = charismatic }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = charismatic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Romantic = {
+	icon = "gfx/interface/icons/character_trait_icons/romantic.dds"
+	potential = {
+		NOT = { has_trait = romantic }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = romantic
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Brave = {
+	icon = "gfx/interface/icons/character_trait_icons/brave.dds"
+	potential = {
+		NOT = { has_trait = brave }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = brave
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Innovative = {
+	icon = "gfx/interface/icons/character_trait_icons/innovative.dds"
+	potential = {
+		NOT = { has_trait = innovative }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = innovative
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Hedonist = {
+	icon = "gfx/interface/icons/character_trait_icons/hedonist.dds"
+	potential = {
+		NOT = { has_trait = hedonist }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = hedonist
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Pious = {
+	icon = "gfx/interface/icons/character_trait_icons/pious.dds"
+	potential = {
+		NOT = { has_trait = pious }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = pious
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Imposing = {
+	icon = "gfx/interface/icons/character_trait_icons/imposing.dds"
+	potential = {
+		NOT = { has_trait = imposing }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = imposing
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+Add_Honorable = {
+	icon = "gfx/interface/icons/character_trait_icons/honorable.dds"
+	potential = {
+		NOT = { has_trait = honorable }
+		has_variable = openCI_var
+	}
+	possible = {
+
+	}
+
+	effect = {
+		add_trait = honorable
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
